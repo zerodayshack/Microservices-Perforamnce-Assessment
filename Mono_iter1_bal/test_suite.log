@@ -1,0 +1,1055 @@
+ 
+/usr/bin/python3.8 /home/carmine/PycharmProjects/testExecutorRome/TestSuite.py
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal’: File exists
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 153      |
++----------+
+
+1 row available after 22 ms, consumed after another 0 ms
+Deleted 153 nodes, Deleted 102 relationships
++----------+
+| count(s) |
++----------+
+| 548      |
++----------+
+
+1 row available after 362 ms, consumed after another 1 ms
+Set 548 properties
++----------+
+| count(s) |
++----------+
+| 602      |
++----------+
+
+1 row available after 320 ms, consumed after another 0 ms
+Deleted 602 relationships
+*** Test Start ***
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/neo4j-neo4j-core-0’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/neo4j-neo4j-core-1’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/neo4j-neo4j-core-2’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-1-build’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-2-build’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-3-build’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-4-h4v95’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-4-nfjgs’: File exists
+mkdir: cannot create directory ‘Mono_100th_try2_iter1_bal/monolith-otm-4-tx9bh’: File exists
+start time: Fri Oct 23 10:58:28 2020, epoch: 1603443508553
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 100_Mono_TT_fixedRepetition.jmx -l ./Mono_100th_try2_iter1_bal/test_Mono_100th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 100_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 10:58:29 CEST 2020 (1603443509703)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +      1 in 00:00:01 =    1.5/s Avg:   226 Min:   226 Max:   226 Err:     0 (0.00%) Active: 4 Started: 4 Finished: 0
+summary +   1245 in 00:00:30 =   42.1/s Avg:   267 Min:    48 Max:  3257 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary =   1246 in 00:00:30 =   41.2/s Avg:   267 Min:    48 Max:  3257 Err:     0 (0.00%)
+summary +   1580 in 00:00:30 =   52.8/s Avg:   218 Min:    48 Max:   939 Err:     1 (0.06%) Active: 100 Started: 100 Finished: 0
+summary =   2826 in 00:01:00 =   47.0/s Avg:   240 Min:    48 Max:  3257 Err:     1 (0.04%)
+summary +   1634 in 00:00:30 =   54.5/s Avg:   247 Min:    46 Max:  1764 Err:     1 (0.06%) Active: 100 Started: 100 Finished: 0
+summary =   4460 in 00:01:30 =   49.5/s Avg:   243 Min:    46 Max:  3257 Err:     2 (0.04%)
+summary +   1527 in 00:00:30 =   50.8/s Avg:   255 Min:    57 Max:  1745 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary =   5987 in 00:02:00 =   49.8/s Avg:   246 Min:    46 Max:  3257 Err:     2 (0.03%)
+summary +   1571 in 00:00:30 =   52.4/s Avg:   246 Min:    56 Max:  1288 Err:     1 (0.06%) Active: 100 Started: 100 Finished: 0
+summary =   7558 in 00:02:30 =   50.3/s Avg:   246 Min:    46 Max:  3257 Err:     3 (0.04%)
+summary +   1539 in 00:00:30 =   51.3/s Avg:   236 Min:    56 Max:  1091 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary =   9097 in 00:03:00 =   50.5/s Avg:   244 Min:    46 Max:  3257 Err:     3 (0.03%)
+summary +   1560 in 00:00:30 =   52.0/s Avg:   243 Min:    56 Max:  1081 Err:     1 (0.06%) Active: 100 Started: 100 Finished: 0
+summary =  10657 in 00:03:30 =   50.7/s Avg:   244 Min:    46 Max:  3257 Err:     4 (0.04%)
+summary +   1603 in 00:00:30 =   53.4/s Avg:   249 Min:    57 Max:  1674 Err:     1 (0.06%) Active: 100 Started: 100 Finished: 0
+summary =  12260 in 00:04:00 =   51.0/s Avg:   245 Min:    46 Max:  3257 Err:     5 (0.04%)
+summary +   1242 in 00:00:30 =   41.4/s Avg:   213 Min:    57 Max:   801 Err:     0 (0.00%) Active: 50 Started: 100 Finished: 50
+summary =  13502 in 00:04:30 =   50.0/s Avg:   242 Min:    46 Max:  3257 Err:     5 (0.04%)
+summary +    807 in 00:00:30 =   26.9/s Avg:   212 Min:    60 Max:   695 Err:     1 (0.12%) Active: 50 Started: 100 Finished: 50
+summary =  14309 in 00:05:00 =   47.7/s Avg:   240 Min:    46 Max:  3257 Err:     6 (0.04%)
+summary +    789 in 00:00:30 =   26.3/s Avg:   217 Min:    59 Max:   666 Err:     1 (0.13%) Active: 50 Started: 100 Finished: 50
+summary =  15098 in 00:05:30 =   45.7/s Avg:   239 Min:    46 Max:  3257 Err:     7 (0.05%)
+summary +    699 in 00:00:30 =   23.2/s Avg:   283 Min:    62 Max:   704 Err:     0 (0.00%) Active: 50 Started: 100 Finished: 50
+summary =  15797 in 00:06:00 =   43.8/s Avg:   241 Min:    46 Max:  3257 Err:     7 (0.04%)
+summary +    272 in 00:00:18 =   15.0/s Avg:   325 Min:    80 Max:   921 Err:     0 (0.00%) Active: 0 Started: 100 Finished: 100
+summary =  16069 in 00:06:18 =   42.5/s Avg:   242 Min:    46 Max:  3257 Err:     7 (0.04%)
+Tidying up ...    @ Fri Oct 23 11:04:48 CEST 2020 (1603443888245)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 7
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 153,380,397 bytes  2,341,686.46 bytes/sec
+total size is 153,342,775  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 152,846,331 bytes  2,333,532.78 bytes/sec
+total size is 152,808,837  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 152,810,832 bytes  2,198,717.96 bytes/sec
+total size is 152,773,346  speedup is 1.00
+Done in 705.76 seconds
+end time: Fri Oct 23 11:10:14 2020, epoch: 1603443508553
+
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 153      |
++----------+
+
+1 row available after 20 ms, consumed after another 1 ms
+Deleted 153 nodes, Deleted 102 relationships
++----------+
+| count(s) |
++----------+
+| 540      |
++----------+
+
+1 row available after 451 ms, consumed after another 1 ms
+Set 540 properties
++----------+
+| count(s) |
++----------+
+| 609      |
++----------+
+
+1 row available after 333 ms, consumed after another 0 ms
+Deleted 609 relationships
+*** Test Start ***
+start time: Fri Oct 23 11:10:25 2020, epoch: 1603444225748
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 150_Mono_TT_fixedRepetition.jmx -l ./Mono_150th_try2_iter1_bal/test_Mono_150th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 150_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 11:10:27 CEST 2020 (1603444227496)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +     26 in 00:00:02 =   11.0/s Avg:   403 Min:    74 Max:  1202 Err:     0 (0.00%) Active: 23 Started: 23 Finished: 0
+summary +   1782 in 00:00:30 =   59.4/s Avg:   576 Min:    45 Max:  5496 Err:     0 (0.00%) Active: 150 Started: 150 Finished: 0
+summary =   1808 in 00:00:32 =   55.9/s Avg:   574 Min:    45 Max:  5496 Err:     0 (0.00%)
+summary +   1983 in 00:00:30 =   66.0/s Avg:   447 Min:    46 Max:  3840 Err:     1 (0.05%) Active: 150 Started: 150 Finished: 0
+summary =   3791 in 00:01:02 =   60.7/s Avg:   508 Min:    45 Max:  5496 Err:     1 (0.03%)
+summary +   2113 in 00:00:30 =   70.5/s Avg:   538 Min:    50 Max:  5331 Err:     1 (0.05%) Active: 150 Started: 150 Finished: 0
+summary =   5904 in 00:01:32 =   63.9/s Avg:   518 Min:    45 Max:  5496 Err:     2 (0.03%)
+summary +   2140 in 00:00:30 =   71.5/s Avg:   438 Min:    57 Max:  4544 Err:     1 (0.05%) Active: 150 Started: 150 Finished: 0
+summary =   8044 in 00:02:02 =   65.8/s Avg:   497 Min:    45 Max:  5496 Err:     3 (0.04%)
+summary +   1928 in 00:00:30 =   64.2/s Avg:   611 Min:    57 Max:  5383 Err:     1 (0.05%) Active: 150 Started: 150 Finished: 0
+summary =   9972 in 00:02:32 =   65.4/s Avg:   519 Min:    45 Max:  5496 Err:     4 (0.04%)
+summary +   2067 in 00:00:30 =   69.0/s Avg:   497 Min:    56 Max:  4411 Err:     1 (0.05%) Active: 150 Started: 150 Finished: 0
+summary =  12039 in 00:03:02 =   66.0/s Avg:   515 Min:    45 Max:  5496 Err:     5 (0.04%)
+summary +   1844 in 00:00:30 =   61.4/s Avg:   422 Min:    56 Max:  4491 Err:     1 (0.05%) Active: 79 Started: 150 Finished: 71
+summary =  13883 in 00:03:32 =   65.4/s Avg:   503 Min:    45 Max:  5496 Err:     6 (0.04%)
+summary +   1177 in 00:00:30 =   39.2/s Avg:   217 Min:    59 Max:   776 Err:     1 (0.08%) Active: 75 Started: 150 Finished: 75
+summary =  15060 in 00:04:02 =   62.1/s Avg:   481 Min:    45 Max:  5496 Err:     7 (0.05%)
+summary +   1120 in 00:00:30 =   37.3/s Avg:   257 Min:    59 Max:  1167 Err:     0 (0.00%) Active: 75 Started: 150 Finished: 75
+summary =  16180 in 00:04:32 =   59.4/s Avg:   465 Min:    45 Max:  5496 Err:     7 (0.04%)
+summary +    415 in 00:00:21 =   19.7/s Avg:   295 Min:    58 Max:   803 Err:     0 (0.00%) Active: 0 Started: 150 Finished: 150
+summary =  16595 in 00:04:53 =   56.6/s Avg:   461 Min:    45 Max:  5496 Err:     7 (0.04%)
+Tidying up ...    @ Fri Oct 23 11:15:21 CEST 2020 (1603444521114)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 6
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 161,398,395 bytes  2,226,185.67 bytes/sec
+total size is 161,358,813  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 161,024,410 bytes  2,252,090.57 bytes/sec
+total size is 160,984,924  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 160,918,136 bytes  2,219,561.41 bytes/sec
+total size is 160,878,674  speedup is 1.00
+Done in 640.62 seconds
+end time: Fri Oct 23 11:21:06 2020, epoch: 1603444225748
+
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 228      |
++----------+
+
+1 row available after 30 ms, consumed after another 1 ms
+Deleted 228 nodes, Deleted 152 relationships
++----------+
+| count(s) |
++----------+
+| 570      |
++----------+
+
+1 row available after 394 ms, consumed after another 0 ms
+Set 570 properties
++----------+
+| count(s) |
++----------+
+| 605      |
++----------+
+
+1 row available after 255 ms, consumed after another 0 ms
+Deleted 605 relationships
+*** Test Start ***
+start time: Fri Oct 23 11:21:17 2020, epoch: 1603444877412
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 200_Mono_TT_fixedRepetition.jmx -l ./Mono_200th_try2_iter1_bal/test_Mono_200th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 200_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 11:21:19 CEST 2020 (1603444879361)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +    484 in 00:00:10 =   46.2/s Avg:   308 Min:    51 Max:  2513 Err:     0 (0.00%) Active: 183 Started: 183 Finished: 0
+summary +   2324 in 00:00:30 =   77.4/s Avg:   781 Min:    44 Max:  4938 Err:     1 (0.04%) Active: 200 Started: 200 Finished: 0
+summary =   2808 in 00:00:40 =   69.4/s Avg:   700 Min:    44 Max:  4938 Err:     1 (0.04%)
+summary +   2287 in 00:00:30 =   76.3/s Avg:   913 Min:    56 Max:  5008 Err:     1 (0.04%) Active: 200 Started: 200 Finished: 0
+summary =   5095 in 00:01:10 =   72.3/s Avg:   795 Min:    44 Max:  5008 Err:     2 (0.04%)
+summary +   2276 in 00:00:30 =   75.8/s Avg:   942 Min:    55 Max:  5856 Err:     1 (0.04%) Active: 200 Started: 200 Finished: 0
+summary =   7371 in 00:01:40 =   73.4/s Avg:   841 Min:    44 Max:  5856 Err:     3 (0.04%)
+summary +   2276 in 00:00:30 =   75.9/s Avg:   981 Min:    57 Max:  5674 Err:     1 (0.04%) Active: 200 Started: 200 Finished: 0
+summary =   9647 in 00:02:10 =   73.9/s Avg:   874 Min:    44 Max:  5856 Err:     4 (0.04%)
+summary +   2293 in 00:00:30 =   76.4/s Avg:   999 Min:    57 Max:  5391 Err:     1 (0.04%) Active: 200 Started: 200 Finished: 0
+summary =  11940 in 00:02:41 =   74.4/s Avg:   898 Min:    44 Max:  5856 Err:     5 (0.04%)
+summary +   2139 in 00:00:30 =   71.4/s Avg:   845 Min:    57 Max:  5170 Err:     1 (0.05%) Active: 111 Started: 200 Finished: 89
+summary =  14079 in 00:03:10 =   73.9/s Avg:   890 Min:    44 Max:  5856 Err:     6 (0.04%)
+summary +   1577 in 00:00:30 =   52.6/s Avg:   258 Min:    57 Max:  2257 Err:     1 (0.06%) Active: 100 Started: 200 Finished: 100
+summary =  15656 in 00:03:40 =   71.0/s Avg:   826 Min:    44 Max:  5856 Err:     7 (0.04%)
+summary +   1380 in 00:00:30 =   45.9/s Avg:   312 Min:    58 Max:  1496 Err:     0 (0.00%) Active: 28 Started: 200 Finished: 172
+summary =  17036 in 00:04:11 =   68.0/s Avg:   785 Min:    44 Max:  5856 Err:     7 (0.04%)
+summary +     74 in 00:00:10 =    7.7/s Avg:   301 Min:    61 Max:   687 Err:     0 (0.00%) Active: 0 Started: 200 Finished: 200
+summary =  17110 in 00:04:20 =   65.8/s Avg:   782 Min:    44 Max:  5856 Err:     7 (0.04%)
+Tidying up ...    @ Fri Oct 23 11:25:39 CEST 2020 (1603445139728)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 5
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 169,963,060 bytes  2,344,318.98 bytes/sec
+total size is 169,921,390  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 169,346,792 bytes  2,368,487.52 bytes/sec
+total size is 169,305,274  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 169,142,197 bytes  2,332,996.73 bytes/sec
+total size is 169,100,727  speedup is 1.00
+Done in 626.76 seconds
+end time: Fri Oct 23 11:31:44 2020, epoch: 1603444877412
+
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 301      |
++----------+
+
+1 row available after 24 ms, consumed after another 0 ms
+Deleted 301 nodes, Deleted 200 relationships
++----------+
+| count(s) |
++----------+
+| 590      |
++----------+
+
+1 row available after 434 ms, consumed after another 0 ms
+Set 590 properties
++----------+
+| count(s) |
++----------+
+| 612      |
++----------+
+
+1 row available after 219 ms, consumed after another 0 ms
+Deleted 612 relationships
+*** Test Start ***
+start time: Fri Oct 23 11:31:54 2020, epoch: 1603445514937
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 250_Mono_TT_fixedRepetition.jmx -l ./Mono_250th_try2_iter1_bal/test_Mono_250th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 250_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 11:31:56 CEST 2020 (1603445516607)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +     61 in 00:00:03 =   18.8/s Avg:   328 Min:    54 Max:  2229 Err:     0 (0.00%) Active: 54 Started: 54 Finished: 0
+summary +   2343 in 00:00:30 =   78.1/s Avg:  1094 Min:    56 Max:  5561 Err:     1 (0.04%) Active: 250 Started: 250 Finished: 0
+summary =   2404 in 00:00:33 =   72.3/s Avg:  1074 Min:    54 Max:  5561 Err:     1 (0.04%)
+summary +   2305 in 00:00:30 =   76.8/s Avg:  1522 Min:    61 Max:  5681 Err:     1 (0.04%) Active: 250 Started: 250 Finished: 0
+summary =   4709 in 00:01:03 =   74.5/s Avg:  1294 Min:    54 Max:  5681 Err:     2 (0.04%)
+summary +   2248 in 00:00:30 =   74.9/s Avg:  1605 Min:   371 Max:  6267 Err:     0 (0.00%) Active: 250 Started: 250 Finished: 0
+summary =   6957 in 00:01:33 =   74.6/s Avg:  1394 Min:    54 Max:  6267 Err:     2 (0.03%)
+summary +   2170 in 00:00:30 =   72.4/s Avg:  1867 Min:   477 Max:  6113 Err:     1 (0.05%) Active: 250 Started: 250 Finished: 0
+summary =   9127 in 00:02:03 =   74.1/s Avg:  1507 Min:    54 Max:  6267 Err:     3 (0.03%)
+summary +   2260 in 00:00:30 =   75.3/s Avg:  1661 Min:   292 Max:  6332 Err:     1 (0.04%) Active: 250 Started: 250 Finished: 0
+summary =  11387 in 00:02:33 =   74.3/s Avg:  1537 Min:    54 Max:  6332 Err:     4 (0.04%)
+summary +   2309 in 00:00:30 =   77.0/s Avg:  1573 Min:   307 Max:  5144 Err:     1 (0.04%) Active: 220 Started: 250 Finished: 30
+summary =  13696 in 00:03:03 =   74.7/s Avg:  1543 Min:    54 Max:  6332 Err:     5 (0.04%)
+summary +   2186 in 00:00:30 =   72.9/s Avg:   487 Min:    57 Max:  4456 Err:     2 (0.09%) Active: 126 Started: 250 Finished: 124
+summary =  15882 in 00:03:33 =   74.5/s Avg:  1398 Min:    54 Max:  6332 Err:     7 (0.04%)
+summary +   1627 in 00:00:30 =   54.3/s Avg:   440 Min:    58 Max:  2028 Err:     0 (0.00%) Active: 41 Started: 250 Finished: 209
+summary =  17509 in 00:04:03 =   72.0/s Avg:  1309 Min:    54 Max:  6332 Err:     7 (0.04%)
+summary +    103 in 00:00:13 =    8.1/s Avg:   284 Min:    62 Max:   788 Err:     0 (0.00%) Active: 0 Started: 250 Finished: 250
+summary =  17612 in 00:04:16 =   68.8/s Avg:  1303 Min:    54 Max:  6332 Err:     7 (0.04%)
+Tidying up ...    @ Fri Oct 23 11:36:12 CEST 2020 (1603445772670)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 5
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 178,466,818 bytes  2,244,866.47 bytes/sec
+total size is 178,423,068  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 178,021,964 bytes  2,157,842.79 bytes/sec
+total size is 177,978,326  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 177,836,504 bytes  2,155,594.79 bytes/sec
+total size is 177,792,914  speedup is 1.00
+Done in 642.47 seconds
+end time: Fri Oct 23 11:42:37 2020, epoch: 1603445514937
+
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 376      |
++----------+
+
+1 row available after 29 ms, consumed after another 1 ms
+Deleted 376 nodes, Deleted 250 relationships
++----------+
+| count(s) |
++----------+
+| 604      |
++----------+
+
+1 row available after 516 ms, consumed after another 0 ms
+Set 604 properties
++----------+
+| count(s) |
++----------+
+| 623      |
++----------+
+
+1 row available after 251 ms, consumed after another 0 ms
+Deleted 623 relationships
+*** Test Start ***
+start time: Fri Oct 23 11:42:48 2020, epoch: 1603446168674
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 300_Mono_TT_fixedRepetition.jmx -l ./Mono_300th_try2_iter1_bal/test_Mono_300th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 300_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 11:42:50 CEST 2020 (1603446170309)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +    472 in 00:00:10 =   49.4/s Avg:   421 Min:    54 Max:  2408 Err:     0 (0.00%) Active: 249 Started: 249 Finished: 0
+summary +   2563 in 00:00:30 =   85.5/s Avg:  1695 Min:   493 Max:  5798 Err:     1 (0.04%) Active: 300 Started: 300 Finished: 0
+summary =   3035 in 00:00:40 =   76.8/s Avg:  1497 Min:    54 Max:  5798 Err:     1 (0.03%)
+summary +   2463 in 00:00:30 =   82.1/s Avg:  1927 Min:   670 Max:  6536 Err:     1 (0.04%) Active: 300 Started: 300 Finished: 0
+summary =   5498 in 00:01:10 =   79.1/s Avg:  1689 Min:    54 Max:  6536 Err:     2 (0.04%)
+summary +   2267 in 00:00:30 =   75.6/s Avg:  2250 Min:   714 Max:  6851 Err:     0 (0.00%) Active: 300 Started: 300 Finished: 0
+summary =   7765 in 00:01:40 =   78.0/s Avg:  1853 Min:    54 Max:  6851 Err:     2 (0.03%)
+summary +   2353 in 00:00:30 =   78.3/s Avg:  2203 Min:   937 Max:  6500 Err:     1 (0.04%) Active: 300 Started: 300 Finished: 0
+summary =  10118 in 00:02:10 =   78.1/s Avg:  1934 Min:    54 Max:  6851 Err:     3 (0.03%)
+summary +   2345 in 00:00:30 =   78.2/s Avg:  2157 Min:   866 Max:  6679 Err:     1 (0.04%) Active: 300 Started: 300 Finished: 0
+summary =  12463 in 00:02:40 =   78.1/s Avg:  1976 Min:    54 Max:  6851 Err:     4 (0.03%)
+summary +   2374 in 00:00:30 =   79.1/s Avg:  1909 Min:   353 Max:  5402 Err:     1 (0.04%) Active: 215 Started: 300 Finished: 85
+summary =  14837 in 00:03:10 =   78.3/s Avg:  1965 Min:    54 Max:  6851 Err:     5 (0.03%)
+summary +   2201 in 00:00:30 =   73.4/s Avg:   615 Min:    59 Max:  4633 Err:     2 (0.09%) Active: 150 Started: 300 Finished: 150
+summary =  17038 in 00:03:40 =   77.6/s Avg:  1791 Min:    54 Max:  6851 Err:     7 (0.04%)
+summary +   1090 in 00:00:29 =   37.1/s Avg:   670 Min:    58 Max:  5203 Err:     1 (0.09%) Active: 0 Started: 300 Finished: 300
+summary =  18128 in 00:04:09 =   72.8/s Avg:  1724 Min:    54 Max:  6851 Err:     8 (0.04%)
+Tidying up ...    @ Fri Oct 23 11:46:59 CEST 2020 (1603446419418)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 5
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 187,261,493 bytes  2,242,653.40 bytes/sec
+total size is 187,215,599  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 186,820,988 bytes  2,320,758.43 bytes/sec
+total size is 186,775,206  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 186,820,986 bytes  2,320,758.41 bytes/sec
+total size is 186,775,204  speedup is 1.00
+Done in 635.89 seconds
+end time: Fri Oct 23 11:53:24 2020, epoch: 1603446168674
+
+Login successful.
+
+You have one project on this server: "otm"
+
+Using project "otm".
+*** ActivePods ***
+monolith-otm-1-build
+monolith-otm-2-build
+monolith-otm-3-build
+monolith-otm-4-h4v95
+monolith-otm-4-nfjgs
+monolith-otm-4-tx9bh
+neo4j-neo4j-core-0
+neo4j-neo4j-core-1
+neo4j-neo4j-core-2
+*** Database Clean ***
++----------+
+| count(a) |
++----------+
+| 445      |
++----------+
+
+1 row available after 27 ms, consumed after another 0 ms
+Deleted 445 nodes, Deleted 294 relationships
++----------+
+| count(s) |
++----------+
+| 630      |
++----------+
+
+1 row available after 385 ms, consumed after another 0 ms
+Set 630 properties
++----------+
+| count(s) |
++----------+
+| 626      |
++----------+
+
+1 row available after 264 ms, consumed after another 1 ms
+Deleted 626 relationships
+*** Test Start ***
+start time: Fri Oct 23 11:53:35 2020, epoch: 1603446815336
+
+java -jar ./apache-jmeter-5.1.1/bin/ApacheJMeter.jar -n -t 2_Mono_TT_fixedRepetition.jmx -l ./Mono_2th_try2_iter1_bal/test_Mono_2th_try2_iter1_bal.jtl
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/carmine/PycharmProjects/testExecutorRome/apache-jmeter-5.1.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Creating summariser <summary>
+Created the tree successfully using 2_Mono_TT_fixedRepetition.jmx
+Starting the test @ Fri Oct 23 11:53:36 CEST 2020 (1603446816453)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +     23 in 00:00:26 =    0.9/s Avg:   431 Min:    85 Max:  1458 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary +     26 in 00:00:28 =    0.9/s Avg:   383 Min:    90 Max:  1306 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =     49 in 00:00:53 =    0.9/s Avg:   406 Min:    85 Max:  1458 Err:     0 (0.00%)
+summary +     24 in 00:00:31 =    0.8/s Avg:   466 Min:    80 Max:  1618 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =     73 in 00:01:25 =    0.9/s Avg:   426 Min:    80 Max:  1618 Err:     0 (0.00%)
+summary +     28 in 00:00:29 =    1.0/s Avg:   347 Min:    80 Max:  1066 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    101 in 00:01:54 =    0.9/s Avg:   404 Min:    80 Max:  1618 Err:     0 (0.00%)
+summary +     30 in 00:00:32 =    1.0/s Avg:   332 Min:    71 Max:   763 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    131 in 00:02:25 =    0.9/s Avg:   387 Min:    71 Max:  1618 Err:     0 (0.00%)
+summary +     29 in 00:00:31 =    0.9/s Avg:   372 Min:    85 Max:  1019 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    160 in 00:02:56 =    0.9/s Avg:   385 Min:    71 Max:  1618 Err:     0 (0.00%)
+summary +     25 in 00:00:29 =    0.9/s Avg:   409 Min:    77 Max:  1864 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    185 in 00:03:25 =    0.9/s Avg:   388 Min:    71 Max:  1864 Err:     0 (0.00%)
+summary +     35 in 00:00:29 =    1.2/s Avg:   358 Min:    71 Max:  1160 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    220 in 00:03:54 =    0.9/s Avg:   383 Min:    71 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:31 =    0.9/s Avg:   365 Min:    67 Max:  1021 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    249 in 00:04:24 =    0.9/s Avg:   381 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     25 in 00:00:31 =    0.8/s Avg:   446 Min:    89 Max:  1496 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    274 in 00:04:56 =    0.9/s Avg:   387 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     37 in 00:00:29 =    1.3/s Avg:   262 Min:    74 Max:   640 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    311 in 00:05:25 =    1.0/s Avg:   372 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     28 in 00:00:30 =    0.9/s Avg:   397 Min:    84 Max:  1073 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    339 in 00:05:55 =    1.0/s Avg:   374 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     28 in 00:00:30 =    0.9/s Avg:   406 Min:    93 Max:   919 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    367 in 00:06:25 =    1.0/s Avg:   377 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     28 in 00:00:29 =    1.0/s Avg:   398 Min:    68 Max:   829 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    395 in 00:06:54 =    1.0/s Avg:   378 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     33 in 00:00:30 =    1.1/s Avg:   380 Min:    72 Max:   980 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    428 in 00:07:24 =    1.0/s Avg:   378 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     28 in 00:00:31 =    0.9/s Avg:   421 Min:    81 Max:  1077 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    456 in 00:07:54 =    1.0/s Avg:   381 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     32 in 00:00:30 =    1.1/s Avg:   327 Min:    74 Max:   776 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    488 in 00:08:25 =    1.0/s Avg:   377 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     25 in 00:00:30 =    0.8/s Avg:   449 Min:    77 Max:  1264 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    513 in 00:08:55 =    1.0/s Avg:   381 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     30 in 00:00:29 =    1.0/s Avg:   308 Min:    78 Max:   791 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    543 in 00:09:24 =    1.0/s Avg:   377 Min:    67 Max:  1864 Err:     0 (0.00%)
+summary +     37 in 00:00:31 =    1.2/s Avg:   361 Min:    64 Max:  1097 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    580 in 00:09:54 =    1.0/s Avg:   376 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     22 in 00:00:29 =    0.8/s Avg:   455 Min:    76 Max:  1378 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    602 in 00:10:24 =    1.0/s Avg:   379 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     26 in 00:00:30 =    0.9/s Avg:   362 Min:    70 Max:  1275 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    628 in 00:10:54 =    1.0/s Avg:   378 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     25 in 00:00:30 =    0.8/s Avg:   464 Min:    87 Max:  1478 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    653 in 00:11:23 =    1.0/s Avg:   381 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:30 =    1.0/s Avg:   371 Min:    81 Max:   853 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    682 in 00:11:54 =    1.0/s Avg:   381 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     36 in 00:00:31 =    1.2/s Avg:   354 Min:    79 Max:  1022 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    718 in 00:12:25 =    1.0/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     26 in 00:00:31 =    0.8/s Avg:   424 Min:    74 Max:  1336 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    744 in 00:12:56 =    1.0/s Avg:   381 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:30 =    1.0/s Avg:   396 Min:    70 Max:  1224 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    773 in 00:13:25 =    1.0/s Avg:   382 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     24 in 00:00:29 =    0.8/s Avg:   455 Min:    80 Max:  1223 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    797 in 00:13:54 =    1.0/s Avg:   384 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     30 in 00:00:32 =    0.9/s Avg:   351 Min:    79 Max:   853 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    827 in 00:14:26 =    1.0/s Avg:   383 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:27 =    1.1/s Avg:   323 Min:    70 Max:  1432 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    856 in 00:14:54 =    1.0/s Avg:   381 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     27 in 00:00:33 =    0.8/s Avg:   338 Min:    75 Max:   713 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    883 in 00:15:27 =    1.0/s Avg:   379 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:28 =    1.0/s Avg:   378 Min:    84 Max:   987 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    912 in 00:15:55 =    1.0/s Avg:   379 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     39 in 00:00:28 =    1.4/s Avg:   328 Min:    67 Max:   968 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    951 in 00:16:23 =    1.0/s Avg:   377 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     35 in 00:00:30 =    1.2/s Avg:   355 Min:    70 Max:  1026 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =    986 in 00:16:53 =    1.0/s Avg:   376 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     32 in 00:00:30 =    1.1/s Avg:   365 Min:    72 Max:   923 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1018 in 00:17:24 =    1.0/s Avg:   376 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     31 in 00:00:30 =    1.0/s Avg:   349 Min:    86 Max:   673 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1049 in 00:17:54 =    1.0/s Avg:   375 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     28 in 00:00:29 =    0.9/s Avg:   401 Min:    84 Max:   783 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1077 in 00:18:23 =    1.0/s Avg:   376 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     34 in 00:00:31 =    1.1/s Avg:   332 Min:    80 Max:   990 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1111 in 00:18:55 =    1.0/s Avg:   375 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     32 in 00:00:29 =    1.1/s Avg:   358 Min:    80 Max:   725 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1143 in 00:19:24 =    1.0/s Avg:   374 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     38 in 00:00:30 =    1.3/s Avg:   356 Min:    76 Max:  1029 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1181 in 00:19:53 =    1.0/s Avg:   374 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     29 in 00:00:30 =    1.0/s Avg:   354 Min:    75 Max:   783 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary =   1210 in 00:20:24 =    1.0/s Avg:   373 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     31 in 00:00:31 =    1.0/s Avg:   400 Min:    68 Max:  1400 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1241 in 00:20:54 =    1.0/s Avg:   374 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     13 in 00:00:30 =    0.4/s Avg:   419 Min:    80 Max:  1049 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1254 in 00:21:24 =    1.0/s Avg:   374 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     14 in 00:00:32 =    0.4/s Avg:   454 Min:   203 Max:   741 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1268 in 00:21:56 =    1.0/s Avg:   375 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     15 in 00:00:28 =    0.5/s Avg:   369 Min:   188 Max:   714 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1283 in 00:22:23 =    1.0/s Avg:   375 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     13 in 00:00:30 =    0.4/s Avg:   516 Min:   203 Max:  1561 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1296 in 00:22:54 =    0.9/s Avg:   376 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     20 in 00:00:32 =    0.6/s Avg:   429 Min:    98 Max:  1297 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1316 in 00:23:25 =    0.9/s Avg:   377 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     14 in 00:00:28 =    0.5/s Avg:   404 Min:    94 Max:   638 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1330 in 00:23:53 =    0.9/s Avg:   378 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     14 in 00:00:30 =    0.5/s Avg:   424 Min:    95 Max:  1526 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1344 in 00:24:24 =    0.9/s Avg:   378 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     14 in 00:00:32 =    0.4/s Avg:   529 Min:    84 Max:  1149 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1358 in 00:24:56 =    0.9/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     13 in 00:00:29 =    0.4/s Avg:   390 Min:    75 Max:   743 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1371 in 00:25:25 =    0.9/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     16 in 00:00:31 =    0.5/s Avg:   387 Min:    79 Max:   811 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1387 in 00:25:56 =    0.9/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     13 in 00:00:29 =    0.5/s Avg:   371 Min:   192 Max:   744 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1400 in 00:26:24 =    0.9/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     13 in 00:00:31 =    0.4/s Avg:   405 Min:    84 Max:   631 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1413 in 00:26:55 =    0.9/s Avg:   380 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     15 in 00:00:30 =    0.5/s Avg:   554 Min:   187 Max:  1597 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1428 in 00:27:25 =    0.9/s Avg:   382 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     18 in 00:00:32 =    0.6/s Avg:   350 Min:    80 Max:   755 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1446 in 00:27:57 =    0.9/s Avg:   381 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +      9 in 00:00:27 =    0.3/s Avg:   758 Min:   268 Max:  1640 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1455 in 00:28:24 =    0.9/s Avg:   384 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     14 in 00:00:33 =    0.4/s Avg:   342 Min:   110 Max:   656 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1469 in 00:28:57 =    0.8/s Avg:   383 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     11 in 00:00:27 =    0.4/s Avg:   672 Min:   195 Max:  1456 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1480 in 00:29:24 =    0.8/s Avg:   385 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     12 in 00:00:32 =    0.4/s Avg:   609 Min:   227 Max:  1363 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1492 in 00:29:56 =    0.8/s Avg:   387 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     12 in 00:00:32 =    0.4/s Avg:   585 Min:   192 Max:  1325 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1504 in 00:30:28 =    0.8/s Avg:   389 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     12 in 00:00:29 =    0.4/s Avg:   598 Min:   239 Max:  1413 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1516 in 00:30:57 =    0.8/s Avg:   390 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     10 in 00:00:27 =    0.4/s Avg:   537 Min:   227 Max:  1126 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1526 in 00:31:24 =    0.8/s Avg:   391 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     11 in 00:00:33 =    0.3/s Avg:   752 Min:   373 Max:  1536 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1537 in 00:31:56 =    0.8/s Avg:   394 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary +     11 in 00:00:27 =    0.4/s Avg:   619 Min:   214 Max:  1603 Err:     0 (0.00%) Active: 1 Started: 2 Finished: 1
+summary =   1548 in 00:32:24 =    0.8/s Avg:   396 Min:    64 Max:  1864 Err:     0 (0.00%)
+summary =   1548 in 00:32:24 =    0.8/s Avg:   396 Min:    64 Max:  1864 Err:     0 (0.00%)
+Tidying up ...    @ Fri Oct 23 12:26:00 CEST 2020 (1603448760124)
+... end of run
+ended 0
+Waiting 30 seconds
+
+Minutes window 33
+*** Exporting Metrics Logs ***
+Collect neo4j-neo4j-core-0 metrics
+Collect neo4j-neo4j-core-1 metrics
+Collect neo4j-neo4j-core-2 metrics
+Collect monolith-otm-1-build metrics
+Collect monolith-otm-2-build metrics
+Collect monolith-otm-3-build metrics
+Collect monolith-otm-4-h4v95 metrics
+Collect monolith-otm-4-nfjgs metrics
+Collect monolith-otm-4-tx9bh metrics
+*** Exporting System Logs ***
+Collect neo4j-neo4j-core-0 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-1 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect neo4j-neo4j-core-2 logs
+WARNING: cannot use rsync: rsync not available in container
+logs/debug.log
+logs/security.log
+logs/query.log.4
+logs/query.log.3
+logs/query.log.2
+logs/query.log.1
+logs/query.log
+Collect monolith-otm-1-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-2-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-3-build logs
+WARNING: cannot use rsync: rsync not available in container
+WARNING: cannot use tar: tar not available in container
+error: No available strategies to copy.
+Collect monolith-otm-4-h4v95 logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 188,243,898 bytes  2,338,434.34 bytes/sec
+total size is 188,197,764  speedup is 1.00
+Collect monolith-otm-4-nfjgs logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 187,799,648 bytes  2,362,260.55 bytes/sec
+total size is 187,753,626  speedup is 1.00
+Collect monolith-otm-4-tx9bh logs
+receiving incremental file list
+log/
+log/audit.log
+log/server.log
+
+sent 66 bytes  received 187,779,643 bytes  2,248,858.79 bytes/sec
+total size is 187,733,621  speedup is 1.00
+Done in 2334.05 seconds
+end time: Fri Oct 23 12:32:29 2020, epoch: 1603446815336
+
+
+Process finished with exit code 0

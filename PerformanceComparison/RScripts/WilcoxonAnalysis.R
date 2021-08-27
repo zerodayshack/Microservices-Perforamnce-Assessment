@@ -2,6 +2,7 @@
 #requires NewSpiders.R and start.R  
 
 #Wilcoxon test 
+#DEfault categories of values
 weights<-c(0.147,0.33,0.474)
 names(weights)<-c("negligible","small","medium")
 #It returns the wicoxon, cliff delta and the magnitude of Cliff delta
@@ -131,7 +132,7 @@ mv_result_e<-as.data.frame(rbind(mv_result_e,cbind(myFile,"mc",c(w_mc_e)), cbind
 }
 setwd("../")
 setwd("Results")
-print("Wilcoxon test all")
+    print("Wilcoxon test all")
 write.csv(
   mv_result,
   "wilcoxonAll.csv",

@@ -162,7 +162,6 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
   }
   
   #RADARs for scalability footprint
-  cat("Building radarplots")
   #Compute the cumulative performance of the last load in which operations do not fail
   df_mono <- df_mono_temp
   df_cqrs <- df_cqrs_temp
@@ -244,7 +243,7 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
             "")
   
   #Create the radarplots
-  cat("Create the radarplots")
+  cat("Create the radarplots ")
   p <- ggplot(ds_melted, aes(x = variable, y = value)) +
     geom_polygon(
       aes(
@@ -364,7 +363,7 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
     )
   
   #RIDGES
-  cat("building ridgeplots")
+  cat("Building ridgeplots ")
   #Compute the contribution to the performance gap for each operation at the last load at which does not fail
   df_mono <- df_mono_temp
   df_cqrs <- df_cqrs_temp
@@ -506,200 +505,74 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
       plot.margin = margin(0, 0.7, 0, 0, "cm")
     )
   
-  # #upside down ridge. Bar represents the call frequency for the corresponding operation times the probability of the load. The bar hangs down from the load at which the operation fails
-  #   pRidgeUPD<-ggplot(ds_meltedR, aes(x = variable, fill=model)) +
-  #     geom_crossbar(aes(y =-value/27+t, ymin= t, ymax=-value/27+t, fatten=0.3,group = model, color = model,fill=model), size = 0.4,wisth=0.2,show.legend = T) +
-  #     geom_hline(yintercept = loadsNum[8], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[7], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[6], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[5], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[4], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[3], linetype = 1, size = 0.1)+
-  #     geom_hline(yintercept = loadsNum[2], linetype = 1, size = 0.1)+
-  #     scale_y_continuous(name="Scalability gap", breaks=loadsNum, limits=c(45/10000,loadsNum[9]))+
-  #     scale_x_discrete(name="", labels=c(expression(italic(o[1])),expression(italic(o[2])),expression(italic(o[3])),expression(italic(o[4])),
-  #                                        expression(italic(o[5])),expression(italic(o[6])),expression(italic(o[7])),expression(italic(o[8])),
-  #                                        expression(italic(o[9])),expression(italic(o[10])),expression(italic(o[11]))))+
-  #     theme_bw()+
-  #     guides(color = guide_legend(ncol=1)) +
-  #     scale_colour_manual(
-  #       values=c("darkgreen","blue","violet","red"),
-  #       limits = c('cqrs', 'mono', 'role'),
-  #       aesthetics = c("colour")
-  #     )+
-  #     scale_fill_manual( values=alpha(c("darkgreen","blue","violet","red"), .1),
-  #                        limits = c('cqrs', 'mono', 'role'),
-  #                        aesthetics = c("fill")
-  #     ) +
-  #     annotate("text", x = -1, y =c(loadsNum[-c(1,9)]), label = loads[-1], size=3,  vjust=-0.6, hjust = 0)+
-  #     theme(
-  #       axis.text.x = element_text(colour=myColors, size=12, vjust = 0.8, hjust=0.3),
-  #       axis.text.y = element_blank(),
-  #       axis.ticks.y =element_blank(),
-  #       panel.border = element_blank(),
-  #       panel.grid.major = element_blank(),
-  #       panel.grid.minor= element_blank(),
-  #       axis.line.x= element_blank(),
-  #     )
-  
-  # #RIDGES with response time
-  # cat("Create rifges with response time")
-  # #Computing the contribution in response time per idividual operation of the total average response time
-  # df_mono <- df_mono_temp
-  # df_cqrs <- df_cqrs_temp
-  # df_role <- df_role_temp
-  # 
-  # for (i in 1:11) {
-  #   if (!length(grep(
-  #     paste("^", df_mono_temp[[1]][i], "$", sep = ""),
-  #     aggregatedValuesCum[, 1]
-  #   )) == 0) {
-  #     df_mono[[2]][i] <- df_mono_temp[[3]][i]
-  #   } else{
-  #     df_mono[[2]][i] <- 0
-  #   }
-  #   if (!length(grep(
-  #     paste("^", df_cqrs_temp[[1]][i], "$", sep = ""),
-  #     aggregatedValuesCum[, 1]
-  #   )) == 0) {
-  #     df_cqrs[[2]][i] <- df_cqrs_temp[[3]][i]
-  #   } else{
-  #     df_cqrs[[2]][i] <- 0
-  #   }
-  #   if (!length(grep(
-  #     paste("^", df_role_temp[[1]][i], "$", sep = ""),
-  #     aggregatedValuesCum[, 1]
-  #   )) == 0) {
-  #     df_role[[2]][i] <- df_role_temp[[3]][i]
-  #   } else{
-  #     df_role[[2]][i] <- 0
-  #   }
-  # }
-  # breaksAug <- c(breaks, 1.2)
-  # datasetRT <-
-  #   as.data.frame(rbind(df_mono[[1]], df_cqrs[[1]], df_role[[1]]))
-  # datasetRT1 <-
-  #   as.data.frame(rbind(df_mono[[2]], df_cqrs[[2]], df_role[[2]]))
-  # datasetRT$model <- c("mono", "cqrs", "role")
-  # datasetRT1$model <- c("mono", "cqrs", "role")
-  # 
-  # ds_meltedRT0 <- NULL
-  # ds_meltedRT1 <- NULL
-  # ds_meltedRT0 <- reshape2::melt(datasetRT)
-  # ds_meltedRT1 <- reshape2::melt(datasetRT1)
-  # 
-  # ds_meltedRT <- cbind(ds_meltedRT0, ds_meltedRT1$value)
-  # 
-  # colnames(ds_meltedRT) <- c("model", "variable", "load", "value")
-  # ds_meltedRT$value <- as.numeric(ds_meltedRT$value)
-  # 
-  # #add a column expressing the threshold for each failing microservice
-  # ds_meltedRT$threshold <- rep(0, nrow(ds_meltedRT))
-  # for (i in 1:11) {
-  #   if (!length(grep(paste("^", names(threshold[i + 2]), "$", sep = ""), ds_meltedRT[, 2])) ==
-  #       0) {
-  #     ds_meltedRT$threshold[grep(paste("^", names(threshold[i + 2]), "$", sep =
-  #                                        ""), ds_meltedRT[, 2])] <-
-  #       unlist(rep(threshold[i + 2], length(grep(
-  #         paste("^", names(threshold[i + 2]), "$", sep = ""), ds_meltedRT[, 2]
-  #       ))))
-  #   }
-  #   else{
-  #     ds_meltedRT$threshold[grep(paste("^", names(threshold[i + 2]), "$", sep =
-  #                                        ""), ds_meltedRT[, 2])] <- 0
-  #   }
-  # }
-  # ds_meltedRT <- ds_meltedRT[!ds_meltedRT$load == 400, ]
-  # 
-  # s <- 2.2 * as.numeric(ds_meltedRT$load) / 100
-  # loadsNum <- 2.2 * as.numeric(loads) / 100
-  # 
-  # pRidgeRT <- ggplot(ds_meltedRT, aes(x = variable, fill = model)) +
-  #   geom_crossbar(
-  #     aes(
-  #       y = value + s,
-  #       ymin = s,
-  #       ymax = value + s,
-  #       fatten = 0.3,
-  #       group = model,
-  #       color = model,
-  #       fill = model
-  #     ),
-  #     size = 0.4,
-  #     wisth = 0.2,
-  #     show.legend = F
-  #   ) +
-  #   geom_hline(yintercept = loadsNum[8],
-  #              linetype = 1,
-  #              size = 0.1) +
-  #   geom_hline(yintercept = loadsNum[7],
-  #              linetype = 1,
-  #              size = 0.1) +
-  #   geom_hline(yintercept = loadsNum[6],
-  #              linetype = 1,
-  #              size = 0.1) +
-  #   geom_hline(yintercept = loadsNum[5],
-  #              linetype = 1,
-  #              size = 0.1) +
-  #   geom_hline(yintercept = loadsNum[4],
-  #              linetype = 1,
-  #              size = 0.1) +
-  #   scale_x_discrete(
-  #     name = "",
-  #     labels = c(
-  #       expression(italic(o[1])),
-  #       expression(italic(o[2])),
-  #       expression(italic(o[3])),
-  #       expression(italic(o[4])),
-  #       expression(italic(o[5])),
-  #       expression(italic(o[6])),
-  #       expression(italic(o[7])),
-  #       expression(italic(o[8])),
-  #       expression(italic(o[9])),
-  #       expression(italic(o[10])),
-  #       expression(italic(o[11]))
-  #     )
-  #   ) +
-  #   theme_bw() +
-  #   ylab("") +
-  #   guides(color = guide_legend(ncol = 1)) +
-  #   scale_colour_manual(
-  #     values = c("darkgreen", "blue", "violet", "red"),
-  #     limits = c('cqrs', 'mono', 'role'),
-  #     aesthetics = c("colour")
-  #   ) +
-  #   scale_fill_manual(
-  #     values = alpha(c("darkgreen", "blue", "violet", "red"), .1),
-  #     limits = c('cqrs', 'mono', 'role'),
-  #     aesthetics = c("fill")
-  #   ) +
-  #   annotate(
-  #     "text",
-  #     x = 0,
-  #     y = c(loadsNum[-c(1:3, 9)]),
-  #     label = loads[-c(1:3)],
-  #     size = 5,
-  #     vjust = -0.6,
-  #     hjust = 0
-  #   ) +
-  #   theme(
-  #     axis.text.x = element_text(
-  #       colour = myColors,
-  #       size = 20,
-  #       vjust = 0.8,
-  #       hjust = 0.3
-  #     ),
-  #     axis.text.y = element_blank(),
-  #     axis.ticks.y = element_blank(),
-  #     panel.border = element_blank(),
-  #     axis.title.y = element_text(size = 24),
-  #     panel.grid.major = element_blank(),
-  #     panel.grid.minor = element_blank(),
-  #     axis.line.x = element_blank(),
-  #     legend.text = element_text(size = 24),
-  #     legend.title = element_text(size = 24),
-  #     plot.margin = margin(0, 0.7, 0, 0, "cm")
-  #   )
+  #RIDGES with response time
+  cat("Create ridges with response time")
+  #Computing the contribution in response time per idividual operation of the total average response time
+  df_mono <- df_mono_temp
+  df_cqrs <- df_cqrs_temp
+  df_role <- df_role_temp
+
+  for (i in 1:11) {
+    if (!length(grep(
+      paste("^", df_mono_temp[[1]][i], "$", sep = ""),
+      aggregatedValuesCum[, 1]
+    )) == 0) {
+      df_mono[[2]][i] <- df_mono_temp[[3]][i]
+    } else{
+      df_mono[[2]][i] <- 0
+    }
+    if (!length(grep(
+      paste("^", df_cqrs_temp[[1]][i], "$", sep = ""),
+      aggregatedValuesCum[, 1]
+    )) == 0) {
+      df_cqrs[[2]][i] <- df_cqrs_temp[[3]][i]
+    } else{
+      df_cqrs[[2]][i] <- 0
+    }
+    if (!length(grep(
+      paste("^", df_role_temp[[1]][i], "$", sep = ""),
+      aggregatedValuesCum[, 1]
+    )) == 0) {
+      df_role[[2]][i] <- df_role_temp[[3]][i]
+    } else{
+      df_role[[2]][i] <- 0
+    }
+  }
+  breaksAug <- c(breaks, 1.2)
+  datasetRT <-
+    as.data.frame(rbind(df_mono[[1]], df_cqrs[[1]], df_role[[1]]))
+  datasetRT1 <-
+    as.data.frame(rbind(df_mono[[2]], df_cqrs[[2]], df_role[[2]]))
+  datasetRT$model <- c("mono", "cqrs", "role")
+  datasetRT1$model <- c("mono", "cqrs", "role")
+
+  ds_meltedRT0 <- NULL
+  ds_meltedRT1 <- NULL
+  ds_meltedRT0 <- reshape2::melt(datasetRT)
+  ds_meltedRT1 <- reshape2::melt(datasetRT1)
+
+  ds_meltedRT <- cbind(ds_meltedRT0, ds_meltedRT1$value)
+
+  colnames(ds_meltedRT) <- c("model", "variable", "load", "value")
+  ds_meltedRT$value <- as.numeric(ds_meltedRT$value)
+
+  #add a column expressing the threshold for each failing microservice
+  ds_meltedRT$threshold <- rep(0, nrow(ds_meltedRT))
+  for (i in 1:11) {
+    if (!length(grep(paste("^", names(threshold[i + 2]), "$", sep = ""), ds_meltedRT[, 2])) ==
+        0) {
+      ds_meltedRT$threshold[grep(paste("^", names(threshold[i + 2]), "$", sep =
+                                         ""), ds_meltedRT[, 2])] <-
+        unlist(rep(threshold[i + 2], length(grep(
+          paste("^", names(threshold[i + 2]), "$", sep = ""), ds_meltedRT[, 2]
+        ))))
+    }
+    else{
+      ds_meltedRT$threshold[grep(paste("^", names(threshold[i + 2]), "$", sep =
+                                         ""), ds_meltedRT[, 2])] <- 0
+    }
+  }
+  ds_meltedRT <- ds_meltedRT[!ds_meltedRT$load == 400, ]
   
   ds_meltedRT_offset <- ds_meltedRT
   ds_meltedRT$offset <- rep(0, nrow(ds_meltedRT))
@@ -805,7 +678,7 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
     )
   
   #SAVE PLOTS
-  cat("Save plots")
+  cat("Save plots ")
   #Save each plot individually
   i <-
     grep(pathData,
@@ -817,40 +690,21 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
          ))
   plot_list[[i]] <- p
   plotLine_list[[i]] <- pRidge
-  #plotLineUSD_list[[i]] <- pRidgeUPD
-  #plotLineRT_list[[i]] <- pRidgeRT
   plotLineRTO_list[[i]] <- pRidgeRT_offset
-  #spider
+  
+  #Radar
   myFile <-
     paste("Results/Plots/spider_iter", index, "_", type, ".pdf", sep = "")
   ggsave(file = myFile, plot_list[[i]])
-  #system(paste("pdfcrop --margins '0 0 0 0'", myFile, " " ,myFile, sep=" "))
-  #ridge
+
+  #Ridge
   myFiler <-
     paste("Results/Plots/ridge_iter", index, type, ".pdf", sep = "")
   ggsave(file = myFiler, plotLine_list[[i]])
   system(paste("pdfcrop --margins '10 50 10 10'", myFiler, " " , myFiler, sep =
                  " "))
-  # #upsidown ridge
-  # myFilerUSD <-
-  #   paste("Results/Plots/usd_ridge_iter", index, type, ".pdf", sep = "")
-  # ggsave(file = myFilerUSD, plotLineUSD_list[[i]])
-  # system(paste(
-  #   "pdfcrop --margins '10 50 10 10'",
-  #   myFilerUSD,
-  #   " " ,
-  #   myFilerUSD,
-  #   sep = " "
-  # ))
   
-  # #reponse time ridge
-  # myFilerRT <-
-  #   paste("Results/Plots/rt_ridge_iter", index, type, ".pdf", sep = "")
-  # ggsave(file = myFilerRT, plotLineRT_list[[i]])
-  # system(paste("pdfcrop --margins '10 50 10 10'", myFilerRT, " " , myFilerRT, sep =
-  #                " "))
-  
-  #response time offset ridge
+  #Response time offset ridge
   myFilerRT_off <-
     paste("Results/Plots/rto_ridge_iter", index, type, ".pdf", sep = "")
   ggsave(file = myFilerRT_off, plotLineRTO_list[[i]])

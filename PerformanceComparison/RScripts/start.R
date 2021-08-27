@@ -11,13 +11,9 @@ options(warn = -1)
 
 # #SETTINGS
 # +
-#To run from command line un comment the following lines. Only two args: working directory and path to experiment data
-#args = commandArgs(trailingOnly=TRUE)
-# -
-#uncomment these lines to use it in command line
+#To run from command line uncomment the following lines. 
 #args = commandArgs(trailingOnly=TRUE)
 #workingDirectory<-args[1]
-#To start from console use
 #RScript start.R <path to workingDirectory> 
 
 #LIBRARIES
@@ -45,7 +41,7 @@ library(ggplotify)
 #Skip this section if you know the file path of the data files
 #########
 #Set the working directory containing the directory "RScripts"  
-#setwd("~/Research/Dropbox/JupyterNotebooks/")
+setwd("~/Research/Dropbox/JupyterNotebooks/UNISANNIO/")
 workingDirectory<-paste(getwd(), "/PerformanceComparison", sep="")
 setwd(workingDirectory)
 
@@ -55,8 +51,6 @@ scriptDirectory <- paste(getwd(),"/RScripts/", sep = "")
 #Set folder for data and results. Substitute it with yours or comment it if you launch from terminal
 dataDirectory <- paste(getwd(), "/DATA/Experiments/", sep = "")
 setwd(dataDirectory)
-#check the directory
-getwd()
 
 #search for the name of the data files
 files <- list.files(dataDirectory, pattern = ".xlsx", recursive = TRUE)
@@ -176,7 +170,6 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
   
   #Set the directory for the results
   setwd("../../")
-  getwd()
   resultsDirectory <- paste(workingDirectory, "/Results/", sep = "")
   if (!dir.exists("Results")) {
     dir.create("Results")
@@ -234,7 +227,6 @@ for (pathData in c(pathData_I1_UB, pathData_I1_B, pathData_I2_UB, pathData_I2_B)
     failingServices <- temp_failingServices
   }
   setwd("../")
-  #getwd()
   write.csv(
     failingServices,
     paste(

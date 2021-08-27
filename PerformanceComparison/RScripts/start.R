@@ -41,7 +41,6 @@ library(ggplotify)
 #Skip this section if you know the file path of the data files
 #########
 #Set the working directory containing the directory "RScripts"  
-setwd("~/Research/Dropbox/JupyterNotebooks/UNISANNIO/")
 workingDirectory<-paste(getwd(), "/PerformanceComparison", sep="")
 setwd(workingDirectory)
 

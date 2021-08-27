@@ -10,7 +10,7 @@ In the "DATA" folder there are four set of experiments. Each dataset is saved in
 ```
 iter<i>_<type>-profile_<date>.xlsx
 ```
-where iter<i> indicates the iteration and its number: 1 or 2 and type is a boolean "dal" or "unbal"
+where iter<i> indicates the iteration and its number: 1 or 2 and type is a boolean "bal" or "unbal"
 
 ###R scripts
 there are five scripts:

@@ -30,23 +30,26 @@ There are few ways to run the scripts.
 Download the whole folder 
 * Run `start.R' in RStudio 
 * Uncomment the following lines in `start.R'
-...
+
+```
 #args = commandArgs(trailingOnly=TRUE)
 #workingDirectory<-args[1]
 #RScript start.R <path to workingDirectory> 
-...
+```
 
 and run with command 
-...
+  
+```
 RScript start.R <path to workingDirectory> 
-...
+```
 
 *Run start.Rmd in RStudio
 *Run start.ipynb from command line (run it from the folder directory "PerformanceComparison")
 
-...
+```
 Jupiter notebook start.ipynb
-...
+```
+  
 ###Output
 
-the output is contained in the folder "Results" and contains the failing services per architecture deployment and iteration, the plots (Radar, Ridge) and the Wicoxon test results
+the output is contained in the folder "Results" and includes the failing services per architecture deployment and iteration, the plots (Radar, Ridge, Ploygons) and the Wicoxon tests per component

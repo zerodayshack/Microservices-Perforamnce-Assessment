@@ -12,6 +12,14 @@ iter<i>_<type>-profile_<date>.xlsx
 ```
 where iter<i> indicates the iteration and its number: 1 or 2 and type is a boolean "bal" or "unbal"
 
+The file contains the avg and sd of response time per individual operations and frequency of requests to a single operation (Mix).  
+
+The first column is the number of concurrent users (load intensity). 
+The next five columns are the deployment configuration. 
+The remianing columns are the microservices. 
+
+From a JMeter file you can obtain such data.
+  
 ## R scripts
 There are five scripts:
 

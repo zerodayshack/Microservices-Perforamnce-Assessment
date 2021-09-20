@@ -37,7 +37,7 @@ In the folder `PerformanceComparison/DATA` there are four cleaned datasets that 
 iter<i>_<type>-profile_<date>.xlsx
 ```
 
-where `<i>` indicates the iteration number (1 or 2), `<type>` its own usage profile type (either `bal` or `unbal`) and `<date>` is a timestamp.
+where `<i>` indicates the iteration number (1 or 2), `<type>` is the behavior mix model (either `bal` or `unbal`) and `<date>` is a timestamp.
 Each file contains the average and standard deviation of the response time per individual operation exposed by microservices as well as the frequency of associated with requests (Mix).  
 
 The content is as follows:

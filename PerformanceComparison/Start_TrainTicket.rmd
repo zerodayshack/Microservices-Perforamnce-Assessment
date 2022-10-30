@@ -112,7 +112,7 @@ aggregatedValues <-
 
 #Set the directory for the results
 setwd("../../")
-resultsDirectory <- paste(workingDirectory, "/Results/", sep = "")
+resultsDirectory <- paste(getwd(), "/Results/", sep = "")
 if (!dir.exists("Results")) {
   dir.create("Results")
 }
